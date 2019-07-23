@@ -27,6 +27,7 @@ smart-cloud 是一个基于Spring Boot + Spring Cloud 的种子项目，用于�
 
 该项目包含以下服务
 
+* smart-common - 公共模块
 * smart-config - 外部配置
 * smart-monitor - 监控
 * smart-gateway - 代理所有微服务的接口网关

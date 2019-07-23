@@ -11,6 +11,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <modules>
+        <module>smart-common</module>
         <module>smart-gateway</module>
         <module>smart-auth</module>
         <module>smart-monitor</module>
@@ -41,7 +42,7 @@
         <spring-boot-admin.version>2.1.6</spring-boot-admin.version>
 
         <!-- Commons Settings -->
-        <hutool.version>4.5.16</hutool.version>
+        <hutool.version>4.5.17</hutool.version>
         <jjwt.version>0.9.1</jjwt.version>
         <mybatis-plus-starter.version>3.1.2</mybatis-plus-starter.version>
         <mysql-connector.version>8.0.16</mysql-connector.version>
@@ -120,6 +121,11 @@
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-server-ui</artifactId>
                 <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jjwt.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
