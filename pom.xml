@@ -40,13 +40,16 @@
 
         <!-- Spring Boot Settings -->
         <spring-boot-admin.version>2.1.6</spring-boot-admin.version>
+        <spring-boot-druid.version>1.1.18</spring-boot-druid.version>
 
         <!-- Commons Settings -->
         <hutool.version>4.5.17</hutool.version>
         <jjwt.version>0.9.1</jjwt.version>
         <mybatis-plus-starter.version>3.1.2</mybatis-plus-starter.version>
         <mysql-connector.version>8.0.16</mysql-connector.version>
+        <dynamic-datasource.version>2.5.5</dynamic-datasource.version>
         <swagger2.version>2.9.2</swagger2.version>
+        <p6spy.version>3.8.2</p6spy.version>
     </properties>
 
     <dependencies>
@@ -60,7 +63,6 @@
             <artifactId>hutool-all</artifactId>
             <version>${hutool.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -103,6 +105,16 @@
                 <version>${mysql-connector.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+                <version>${dynamic-datasource.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${spring-boot-druid.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger2</artifactId>
                 <version>${swagger2.version}</version>
@@ -114,18 +126,20 @@
             </dependency>
             <dependency>
                 <groupId>de.codecentric</groupId>
-                <artifactId>spring-boot-admin-starter-server</artifactId>
+                <artifactId>spring-boot-admin-dependencies</artifactId>
                 <version>${spring-boot-admin.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.codecentric</groupId>
-                <artifactId>spring-boot-admin-server-ui</artifactId>
-                <version>${spring-boot-admin.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt</artifactId>
                 <version>${jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>p6spy</groupId>
+                <artifactId>p6spy</artifactId>
+                <version>${p6spy.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: smart-auth
+  cloud:
+    nacos:
+      config:
+        server-addr: nacos.lerry903.com:80
+        file-extension: yml
+        group: SMART-CLOUD_GROUP
+      discovery:
+        server-addr: nacos.lerry903.com:80
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true

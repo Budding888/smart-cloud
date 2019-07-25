@@ -4,6 +4,7 @@ import com.smart.common.constants.ResponseCodeEnum;
 import com.smart.common.result.DefaultErrorResult;
 import com.smart.common.result.ParameterInvalidItem;
 import com.smart.common.util.ConvertUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -22,9 +23,8 @@ import java.util.List;
  * 聚合层全局异常处理类
  * Date: 2019-7-23 19:05:41
  */
+@Slf4j
 public class BaseGlobalExceptionHandler {
-
-    private Logger log = LoggerFactory.getLogger(this.getClass());
 
     /**
      * 违反约束异常
