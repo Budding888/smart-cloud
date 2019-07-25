@@ -1,10 +1,13 @@
-[![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
+[![License](https://img.shields.io/github/license/lerry903/smart-cloud.svg)](https://github.com/lerry903/smart-cloud/blob/master/LICENSE)
 [![GitHub Release](https://img.shields.io/github/release/lerry903/smart-cloud.svg)](https://github.com/lerry903/smart-cloud/releases)
+[![Codecov](https://img.shields.io/codecov/c/github/lerry903/smart-cloud.svg)](https://codecov.io/gh/lerry903/smart-cloud)
+[![build](https://travis-ci.org/lerry903/smart-cloud.svg?branch=master)](https://travis-ci.org/lerry903/smart-cloud.svg)
 [![SpringBoot](https://img.shields.io/badge/SpringBoot-2.1.6.RELEASE-brightgreen.svg)](https://docs.spring.io/spring-boot/docs/2.1.6.RELEASE/reference/htmlsingle/)
-## 简介
+
+# 简介
 smart-cloud 是一个基于Spring Boot + Spring Cloud 的种子项目，用于快速构建中小型API、RESTful API项目,稳定、简单、快速使我们摆脱那些重复劳动，专注于业务代码的编写，减少加班。
 
-## 源码托管
+# 源码托管
 > **[Github](https://github.com/lerry903/smart-cloud)** | **[Gitee](https://gitee.com/lerry903/smart-cloud)**
 
 # 技术栈
@@ -39,7 +42,10 @@ smart-cloud 是一个基于Spring Boot + Spring Cloud 的种子项目，用于�
 
 # 项目预览
 ## 注册中心
-
+- Nacos控制台
+    - 地址:http://nacos.lerry903.com/nacos
+    - 账户与密码均为：nacos
+    
 ## 监控中心
 
 ## RabbitMQ 监控
