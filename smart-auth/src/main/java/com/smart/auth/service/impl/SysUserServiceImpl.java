@@ -26,4 +26,16 @@ public class SysUserServiceImpl implements SysUserService {
         log.info("根据用户名查询用户信息入参:{}", username);
         return null;
     }
+
+    /**
+     * 根据手机查询用户信息
+     *
+     * @param mobile 手机号
+     * @return 用户信息
+     */
+    @Override
+    public SysUserVo loadUserByMobile(String mobile) {
+        log.info("根据手机号查询用户信息入参:{}", mobile);
+        return null;
+    }
 }

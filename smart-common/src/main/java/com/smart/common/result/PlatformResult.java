@@ -16,7 +16,7 @@ import lombok.Data;
 @Data
 public class PlatformResult<T> implements Result {
 
-    private T data;
+    private transient T data;
 
     private Integer code = ResponseCodeEnum.SUCCESS.code();
 

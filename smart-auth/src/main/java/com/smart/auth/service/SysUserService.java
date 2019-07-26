@@ -22,4 +22,12 @@ public interface SysUserService {
      */
     @GetMapping("/user/loadUserByUsername/{username}")
     SysUserVo loadUserByUsername(@PathVariable(value = "username") String username);
+
+    /**
+     * 根据手机查询用户信息
+     * @param mobile 手机号
+     * @return 用户信息
+     */
+    @GetMapping("/user/loadUserByMobile/{mobile}")
+    SysUserVo loadUserByMobile(@PathVariable(value = "mobile") String mobile);
 }

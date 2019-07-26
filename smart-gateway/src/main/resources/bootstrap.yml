@@ -1,0 +1,11 @@
+logging:
+  level:
+    com.baomidou.dynamic: debug
+
+spring:
+  application:
+    name: smart-gateway
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
